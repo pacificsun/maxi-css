@@ -33,6 +33,12 @@ body {
   vertical-align: middle;
 }
 
+.plan__list {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
 .plan--highlighted {
   background: #19b84c;
   color: white;
@@ -68,29 +74,6 @@ body {
 
 .plan__feature {
   margin: 8px 0px;
-}
-
-.button {
-  background: #0e4f1f;
-  color: white;
-  font: inherit;
-  border: 1.5px solid #0e4f1f;
-  padding: 8px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* adding hover and active effect on button */
-
-.button:hover,
-.button:active {
-  background: white;
-  color: #0e4f1f;
-}
-
-.button:focus {
-  outline: none;
 }
 
 #key-features {
@@ -131,74 +114,4 @@ body {
   font-weight: bold;
   color: white;
   font-size: 20px;
-}
-
-.main-header {
-  width: 100%;
-  background-color: #2ddf5c;
-  padding: 8px 10px;
-}
-
-/* direct child of main-header */
-
-.main-header > div {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.main-header__brand {
-  color: #0e4f1f;
-  text-decoration: none; /* removes underline */
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 74px);
-  vertical-align: middle;
-}
-.main-nav__items {
-  margin: 0px;
-  padding: 0px;
-  list-style: none; /*  removes bullet point */
-}
-
-.main-nav__item {
-  display: inline-block;
-  margin: 0 16px;
-}
-
-.main-nav__item a {
-  text-decoration: none;
-  color: #0e4f1f;
-  font-weight: bold;
-  padding: 3px 0;
-}
-
-/* sudo class*/
-
-.main-nav__item a:hover,
-.main-nav__item a:active {
-  color: white;
-  border-bottom: 5px solid white;
-}
-/* grouped in above line */
-/* .main-nav__item a:active {
-  color: white;
-} */
-
-.main-nav__item--cta a {
-  color: white;
-  background: #ff1b68;
-  padding: 8px 16px;
-  border-radius: 8px;
-}
-
-.main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
-  color: #ff1b68;
-  background-color: white;
-  border: none; /* overides border-bottom ;*/
 }
