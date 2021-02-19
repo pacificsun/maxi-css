@@ -1,0 +1,26 @@
+----------
+Responsiveness
+----------
+# Hardware pixel and software pixel
+
+for example take ipone 8
+physical width:750
+physical height:1334
+
+css widht: 375
+css height: 667
+
+pixel ratio:2
+
+we adjust viewport in meta of head.
+
+
+# viewport and media queries
+viewport:  Needed to adjust site to device viewport
+can not add design changes like adding css
+media queries: change design depending on size by adding css.
+
+# standard way is to create moblie first design and then web
+
+# Adding medaia queries
+- @media(min-width: 40rem){} vaneko 40 samma lagu hunna 40 paxi lagu hunxa
