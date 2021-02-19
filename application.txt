@@ -24,3 +24,8 @@ media queries: change design depending on size by adding css.
 
 # Adding medaia queries
 - @media(min-width: 40rem){} vaneko 40 samma lagu hunna 40 paxi lagu hunxa
+
+#Breaking points
+- go to mydevices.io -> compare devicess-> Tablets -> css width and height
+
+# div is a block level element
