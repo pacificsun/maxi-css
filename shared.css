@@ -7,6 +7,11 @@ body {
   margin: 0px;
 }
 
+main {
+  min-height: calc(100vh-3.5rem-8rem);
+  margin-top: 3.5rem;
+}
+
 .backdrop {
   position: fixed;
   display: none;
@@ -24,7 +29,7 @@ body {
   top: 0;
   left: 0;
   background-color: #2ddf5c;
-  padding: 8px 10px;
+  padding: 0.5rem 1rem;
   z-index: 1;
 }
 
@@ -61,8 +66,7 @@ body {
   color: #0e4f1f;
   text-decoration: none; /* removes underline */
   font-weight: bold;
-  font-size: 22px;
-  height: 22px;
+  height: 2.5rem;
   display: inline-block;
   vertical-align: middle;
 }

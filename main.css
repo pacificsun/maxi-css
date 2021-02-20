@@ -15,7 +15,6 @@ body {
   background-clip: border-box;
   width: 100vw;
   height: 33vh;
-  margin-top: 2.25rem;
   position: relative;
 }
 
@@ -28,7 +27,7 @@ body {
   font-size: 1.6rem;
 }
 
-@media (min-width: 40rem) and (min-height: 60rem) {
+@media (min-width: 40rem) and (min-height: 40rem) {
   #product-overview {
     height: 40vh;
     background-position: 50% 25%;
