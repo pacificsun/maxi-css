@@ -31,3 +31,18 @@ media queries: change design depending on size by adding css.
 # div is a block level element
 # The text-align property specifies the horizontal alignment of text in an element.
 # max width le element lai stretch huda euta point i.e max width samma matra thulo huna dinxa
+
+-------
+form
+-------
+# Advanced Attribute selector
+[type]{
+    color:red;
+}
+<input type="text">
+
+[email]{
+    color:red
+}
+<input type="email>
+
