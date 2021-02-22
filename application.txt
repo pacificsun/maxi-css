@@ -46,3 +46,11 @@ form
 }
 <input type="email>
 
+------
+fonts
+------
+
+# Generic family and fonts family
+- Inside Generic family we have multiple font family
+- font family is font family may not be part of Generic family
+# font affects font loading performance
