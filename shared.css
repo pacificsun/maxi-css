@@ -1,14 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,900");
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
 * {
-  box-sizing: border-box; /*takes size till to border */
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  margin: 0px;
+  margin: 0;
 }
 
 main {
-  min-height: calc(100vh-3.5rem-8rem);
+  min-height: calc(100vh - 3.5rem - 8rem);
   margin-top: 3.5rem;
 }
 
@@ -28,12 +32,10 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #2ddf5c;
+  background: #2ddf5c;
   padding: 0.5rem 1rem;
   z-index: 1;
 }
-
-/* direct child of main-header */
 
 .main-header > div {
   display: inline-block;
@@ -64,32 +66,32 @@ main {
 
 .main-header__brand {
   color: #0e4f1f;
-  text-decoration: none; /* removes underline */
+  text-decoration: none;
   font-weight: bold;
   height: 2.5rem;
+  /* width: 20px; */
   display: inline-block;
   vertical-align: middle;
 }
 
 .main-header__brand img {
-  height: 100%; /* % work inside a block element*/
+  height: 100%;
+  /* width: 100%; */
 }
 
 .main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 122px);
-  vertical-align: middle;
+  display: none;
 }
+
 .main-nav__items {
-  margin: 0px;
-  padding: 0px;
-  list-style: none; /*  removes bullet point */
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .main-nav__item {
   display: inline-block;
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 .main-nav__item a,
@@ -97,23 +99,17 @@ main {
   text-decoration: none;
   color: #0e4f1f;
   font-weight: bold;
-  padding: 0.2rems 0;
+  padding: 0.2rem 0;
 }
-
-/* sudo class*/
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
   color: white;
   border-bottom: 5px solid white;
 }
-/* grouped in above line */
-/* .main-nav__item a:active {
-    color: white;
-  } */
 
 .main-nav__item--cta a,
-.amin-nav__item--cta a {
+.mobile-nav__item--cta a {
   color: white;
   background: #ff1b68;
   padding: 0.5rem 1rem;
@@ -125,31 +121,44 @@ main {
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active {
   color: #ff1b68;
-  background-color: white;
-  border: none; /* overides border-bottom ;*/
+  background: white;
+  border: none;
+}
+
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+
+  .main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 44px);
+    vertical-align: middle;
+  }
 }
 
 .main-footer {
   background: black;
-  margin-top: 48px;
-  padding: 32px;
+  padding: 2rem;
+  margin-top: 3rem;
 }
 
 .main-footer__links {
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
 .main-footer__link {
-  display: inline-block;
-  margin: 0 16px;
+  display: block;
+  margin: 1rem 0;
 }
 
 .main-footer__link a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
 .main-footer__link a:hover,
@@ -190,13 +199,11 @@ main {
   color: white;
   font: inherit;
   border: 1.5px solid #0e4f1f;
-  padding: 8px;
+  padding: 0.5rem;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
 }
-
-/* adding hover and active effect on button */
 
 .button:hover,
 .button:active {
@@ -213,4 +220,15 @@ main {
   border: #a1a1a1;
   background: #ccc;
   color: #a1a1a1;
+}
+
+.open {
+  display: block !important;
+}
+
+@media (min-width: 40rem) {
+  .main-footer__link {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 }
